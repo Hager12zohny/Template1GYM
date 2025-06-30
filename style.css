@@ -1,0 +1,314 @@
+
+* { 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+  font-family: sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+   width: 100%; 
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1.3rem 10%; 
+ 
+}
+.hero {
+  min-height: 100vh;
+  background-image: url("../images/gym.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px; 
+  position: relative;
+}
+
+
+.logo img {
+  width: 10%; 
+  height: auto;
+}
+.nav-links ul {
+  display: flex;
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 2.5rem;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  
+}
+
+.nav-links a:hover {
+  color: #f0c040; 
+}
+
+.nav-links a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links a:hover::after{
+width: 100%;
+
+}
+
+.text {
+  width: 80%;
+  color: black;
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(255,255,255,0.8); 
+  border-radius: 10px;
+}
+.text h1{
+    font-size: 62px;
+}
+.text p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid blue;
+    background: white;
+    color: blue;
+}
+
+.icons{
+    font-size: 10px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    right: 55%;
+}
+@media(max-width:768px){
+    .icons{
+      display: inline-flex;
+    }
+  
+.nav-links{
+    position: absolute;
+    background-color: red;
+    height: 100vh;
+    top: 100%;
+    text-align:left;
+    z-index: 2;
+}
+.trainer {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+
+  .trainer img {
+    height: 250px;
+  }
+}
+.trainers {
+  width: 100%;
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #fff;
+}
+
+
+.trainers h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+
+.trainer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.trainer {
+  flex: 1 1 30%;
+  max-width: 350px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.trainer img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+
+.trainer h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.trainer p {
+  color: #555;
+  font-size: 14px;
+}
+
+.trainer:hover {
+  transform: translateY(-5px);
+}
+.equipments {
+  width: 100%;
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #f9f9f9;
+}
+
+.equipments h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.equipment-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.equipment-card {
+  flex: 1 1 30%;
+  max-width: 350px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.equipment-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.equipment-card h3 {
+  padding: 20px;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.equipment-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .equipment-card {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+}
+.about {
+  width: 100%;
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #f1f1f1;
+}
+
+.about h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+.contact {
+  width: 100%;
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #222;
+  color: #fff;
+}
+
+.contact h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+
+
+
+
+
