@@ -31,7 +31,7 @@ body {
 }
 .hero {
   min-height: 100vh;
-  background-image: url("../images/gym.jpeg");
+  background-image: url("gym.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
